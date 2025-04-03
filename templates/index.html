@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi LED Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Raspberry Pi LED Control</h1>
+            <p class="subtitle">Control your LED remotely</p>
+        </header>
+        
+        <main>
+            <div class="led-container">
+                <div id="led-indicator" class="led-indicator off">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <p id="status-text">LED is OFF</p>
+            </div>
+            
+            <div class="controls">
+                <button id="toggle-btn" class="btn">Toggle LED</button>
+            </div>
+            
+            <div class="status-container">
+                <p>Status: <span id="connection-status">Connected</span></p>
+                <p>Last updated: <span id="last-updated">Never</span></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Raspberry Pi LED Control</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

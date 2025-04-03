@@ -7,7 +7,7 @@ LED_PIN = 18  # GPIO pin connected to the LED
 GPIO_MODE = 'BCM'  # BCM or BOARD
 
 # Flask Configuration
-DEBUG = True
+DEBUG = False
 HOST = '0.0.0.0'  # Listen on all interfaces
 PORT = 5000
 
